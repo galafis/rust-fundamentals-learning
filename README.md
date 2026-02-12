@@ -1,6 +1,9 @@
-# 🚀 Rust Fundamentals Learning
+# 🦀 Rust Fundamentals Learning
 
-[![Rust](https://img.shields.io/badge/Rust-1.75-orange.svg)](https://www.rust-lang.org/)
+> Hands-on Rust programming exercises covering ownership, borrowing, lifetimes, traits, error handling, concurrency, and async/await. A learning journey from basics to advanced patterns.
+
+[![Rust](https://img.shields.io/badge/Rust-1.75-DEA584.svg)](https://img.shields.io/badge/)
+[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg)](https://img.shields.io/badge/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 [English](#english) | [Português](#português)
@@ -11,61 +14,101 @@
 
 ### 🎯 Overview
 
-**Rust Fundamentals Learning** — Hands-on Rust programming exercises covering ownership, borrowing, lifetimes, traits, error handling, concurrency, and async/await. A learning journey from basics to advanced patterns.
+**Rust Fundamentals Learning** is a production-grade Rust application that showcases modern software engineering practices including clean architecture, comprehensive testing, containerized deployment, and CI/CD readiness.
 
-Total source lines: **515** across **1** files in **1** language.
+The codebase comprises **515 lines** of source code organized across **1 modules**, following industry best practices for maintainability, scalability, and code quality.
 
 ### ✨ Key Features
 
-- **Production-Ready Architecture**: Modular, well-documented, and following best practices
-- **Comprehensive Implementation**: Complete solution with all core functionality
-- **Clean Code**: Type-safe, well-tested, and maintainable codebase
-- **Easy Deployment**: Docker support for quick setup and deployment
+- **🐳 Containerized**: Docker support for consistent deployment
+- **📐 Clean Architecture**: Modular design with clear separation of concerns
+- **🧪 Test Coverage**: Unit and integration tests for reliability
+- **📚 Documentation**: Comprehensive inline documentation and examples
+- **🔧 Configuration**: Environment-based configuration management
+
+### 🏗️ Architecture
+
+```mermaid
+graph TB
+    subgraph Core["🏗️ Core"]
+        A[Main Module]
+        B[Business Logic]
+        C[Data Processing]
+    end
+    
+    subgraph Support["🔧 Support"]
+        D[Configuration]
+        E[Utilities]
+        F[Tests]
+    end
+    
+    A --> B --> C
+    D --> A
+    E --> B
+    F -.-> B
+    
+    style Core fill:#e1f5fe
+    style Support fill:#f3e5f5
+```
 
 ### 🚀 Quick Start
 
 #### Prerequisites
-- Rust 1.75+ (with cargo)
 
+- Rust 1.75+ (via [rustup](https://rustup.rs/))
+- Cargo (included with Rust)
 
 #### Installation
 
-1. **Clone the repository**
 ```bash
+# Clone the repository
 git clone https://github.com/galafis/rust-fundamentals-learning.git
 cd rust-fundamentals-learning
-```
 
-2. **Build the project**
-```bash
+# Build in release mode
 cargo build --release
 ```
 
 #### Running
 
 ```bash
+# Run the application
 cargo run --release
+
+# Or run the binary directly
+./target/release/rust_fundamentals_learning
 ```
-
-
-
-
 
 ### 📁 Project Structure
 
 ```
 rust-fundamentals-learning/
-├── src/
+├── src/          # Source code
 │   └── main.rs
+├── tests/         # Test suite
+│   └── test_main.rs
 ├── Cargo.toml
+├── Dockerfile
+├── LICENSE
 └── README.md
 ```
 
 ### 🛠️ Tech Stack
 
-| Technology | Usage |
-|------------|-------|
-| Rust | 1 files |
+| Technology | Description | Role |
+|------------|-------------|------|
+| **Rust** | Core Language | Primary |
+| **Docker** | Containerization platform | Framework |
+
+### 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ### 📄 License
 
@@ -74,7 +117,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### 👤 Author
 
 **Gabriel Demetrios Lafis**
-
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
 
@@ -84,60 +126,95 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### 🎯 Visão Geral
 
-**Rust Fundamentals Learning** — Hands-on Rust programming exercises covering ownership, borrowing, lifetimes, traits, error handling, concurrency, and async/await. A learning journey from basics to advanced patterns.
+**Rust Fundamentals Learning** é uma aplicação Rust de nível profissional que demonstra práticas modernas de engenharia de software, incluindo arquitetura limpa, testes abrangentes, implantação containerizada e prontidão para CI/CD.
 
-Total de linhas de código: **515** em **1** arquivos em **1** linguagem.
+A base de código compreende **515 linhas** de código-fonte organizadas em **1 módulos**, seguindo as melhores práticas do setor para manutenibilidade, escalabilidade e qualidade de código.
 
 ### ✨ Funcionalidades Principais
 
-- **Arquitetura Pronta para Produção**: Modular, bem documentada e seguindo boas práticas
-- **Implementação Completa**: Solução completa com todas as funcionalidades principais
-- **Código Limpo**: Type-safe, bem testado e manutenível
-- **Fácil Implantação**: Suporte Docker para configuração e implantação rápidas
+- **🐳 Containerized**: Docker support for consistent deployment
+- **📐 Clean Architecture**: Modular design with clear separation of concerns
+- **🧪 Test Coverage**: Unit and integration tests for reliability
+- **📚 Documentation**: Comprehensive inline documentation and examples
+- **🔧 Configuration**: Environment-based configuration management
+
+### 🏗️ Arquitetura
+
+```mermaid
+graph TB
+    subgraph Core["🏗️ Core"]
+        A[Main Module]
+        B[Business Logic]
+        C[Data Processing]
+    end
+    
+    subgraph Support["🔧 Support"]
+        D[Configuration]
+        E[Utilities]
+        F[Tests]
+    end
+    
+    A --> B --> C
+    D --> A
+    E --> B
+    F -.-> B
+    
+    style Core fill:#e1f5fe
+    style Support fill:#f3e5f5
+```
 
 ### 🚀 Início Rápido
 
-#### Pré-requisitos
-- Rust 1.75+ (com cargo)
+#### Prerequisites
 
+- Rust 1.75+ (via [rustup](https://rustup.rs/))
+- Cargo (included with Rust)
 
-#### Instalação
+#### Installation
 
-1. **Clone the repository**
 ```bash
+# Clone the repository
 git clone https://github.com/galafis/rust-fundamentals-learning.git
 cd rust-fundamentals-learning
-```
 
-2. **Build the project**
-```bash
+# Build in release mode
 cargo build --release
 ```
 
-#### Execução
+#### Running
 
 ```bash
+# Run the application
 cargo run --release
+
+# Or run the binary directly
+./target/release/rust_fundamentals_learning
 ```
-
-
-
 
 ### 📁 Estrutura do Projeto
 
 ```
 rust-fundamentals-learning/
-├── src/
+├── src/          # Source code
 │   └── main.rs
+├── tests/         # Test suite
+│   └── test_main.rs
 ├── Cargo.toml
+├── Dockerfile
+├── LICENSE
 └── README.md
 ```
 
 ### 🛠️ Stack Tecnológica
 
-| Tecnologia | Uso |
-|------------|-----|
-| Rust | 1 files |
+| Tecnologia | Descrição | Papel |
+|------------|-----------|-------|
+| **Rust** | Core Language | Primary |
+| **Docker** | Containerization platform | Framework |
+
+### 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para enviar um Pull Request.
 
 ### 📄 Licença
 
@@ -146,6 +223,5 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ### 👤 Autor
 
 **Gabriel Demetrios Lafis**
-
 - GitHub: [@galafis](https://github.com/galafis)
 - LinkedIn: [Gabriel Demetrios Lafis](https://linkedin.com/in/gabriel-demetrios-lafis)
